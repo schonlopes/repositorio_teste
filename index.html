@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DForge Pro | Peças Técnicas e Protótipos de Alta Precisão</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="accessibility-bar" role="complementary" aria-label="Ferramentas de Acessibilidade">
+        <div class="container accessibility-container">
+            <span>Acessibilidade:</span>
+            <div class="accessibility-buttons">
+                <button id="btn-font-decrease" aria-label="Diminuir tamanho do texto">A-</button>
+                <button id="btn-font-increase" aria-label="Aumentar tamanho do texto">A+</button>
+                <button id="btn-toggle-contrast" aria-label="Alternar alto contraste"><i class="fas fa-adjust"></i> Alto Contraste</button>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-cube icon"></i> <span>3D<span class="text-gradient">Forge Pro</span></span>
+            </div>
+            <nav class="main-nav" aria-label="Navegação Principal">
+                <a href="#beneficios">Benefícios</a>
+                <a href="#produtos">Aplicações</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+            <a href="#orcamento" class="btn btn-primary btn-sm">Orçamento Rápido</a>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">MANUFATURA ADITIVA INDUSTRIAL</div>
+                <h1>Peças em Impressão 3D com Precisão <span class="text-gradient">Milimétrica</span> e Alta Resistência</h1>
+                <p class="lead">Transforme seus projetos e modelos digitais em componentes físicos reais. Atendemos engenharia, odontologia, arquitetura e reposição de peças com acabamento impecável e materiais de engenharia (ABS, PETG, Nylon, Fibra de Carbono e Resina).</p>
+                <div class="hero-cta-group">
+                    <a href="#orcamento" class="btn btn-primary btn-lg">Enviar Arquivo 3D (.STL / .STEP)</a>
+                    <a href="#beneficios" class="btn btn-secondary btn-lg">Conhecer Materiais</a>
+                </div>
+                <div class="hero-trust">
+                    <div><i class="fas fa-check-circle icon"></i> Envio para todo o Brasil</div>
+                    <div><i class="fas fa-shield-alt icon"></i> Garantia de tolerância dimensional</div>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="hero-image-wrapper">
+                    <div class="mock-3d-printer">
+                        <div class="printer-laser"></div>
+                        <i class="fas fa-gears printer-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="benefits-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Por que escolher a nossa manufatura aditiva?</h2>
+                <p>Unimos engenharia avançada, máquinas de última geração e materiais certificados para entregar máxima performance.</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card-benefit">
+                    <div class="card-icon"><i class="fas fa-microscope"></i></div>
+                    <h3>Alta Precisão Dimensional</h3>
+                    <p>Trabalhamos com tolerâncias rígidas ideais para ajustes mecânicos complexos, engrenagens e gabaritos industriais.</p>
+                </div>
+                <div class="card-benefit">
+                    <div class="card-icon"><i class="fas fa-dumbbell"></i></div>
+                    <h3>Materiais de Engenharia</h3>
+                    <p>Peças funcionais produzidas em Nylon com Fibra de Carbono, Policarbonato, TPU flexível e resinas de alta definição.</p>
+                </div>
+                <div class="card-benefit">
+                    <div class="card-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Prototipagem Ultra Rápida</h3>
+                    <p>Reduza o time-to-market do seu produto. Receba seus protótipos funcionais testados e validados em tempo recorde.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos" class="carousel-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Soluções Desenvolvidas sob Demanda</h2>
+                <p>Navegue pelas categorias de peças industriais e modelos complexos que produzimos diariamente.</p>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel-track" id="carousel-track" role="region" aria-live="polite">
+                    </div>
+                <button class="carousel-control prev" id="carousel-prev" aria-label="Slide Anterior"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-control next" id="carousel-next" aria-label="Próximo Slide"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Quem confia na nossa precisão</h2>
+                <p>Empresas, engenheiros e designers que otimizaram suas linhas de produção com nossas peças 3D.</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testimonial-text">"Precisávamos de um lote de 50 gabaritos de montagem em PETG com urgência. A entrega foi realizada antes do prazo e com precisão perfeita para nossa linha de produção."</p>
+                    <div class="testimonial-author">
+                        <strong>Eng. Ricardo Menezes</strong>
+                        <span>Gerente de Operações - Metalúrgica Tech</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testimonial-text">"A qualidade das peças em resina 4K superou todas as expectativas. Detalhes minuciosos para nossos modelos odontológicos que exigem erro zero."</p>
+                    <div class="testimonial-author">
+                        <strong>Dra. Camila Soares</strong>
+                        <span>Diretora Clínica - OdontoDigital</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testimonial-text">"Substituímos uma engrenagem de maquinário importado por uma impressa em Nylon com Fibra de Carbono aqui. A máquina opera há 6 meses sem nenhum desgaste."</p>
+                    <div class="testimonial-author">
+                        <strong>Marcos Albuquerque</strong>
+                        <span>CEO - Inova Automação</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="orcamento" class="cta-section">
+        <div class="container cta-grid">
+            <div class="cta-text">
+                <h2>Pronto para tirar o seu projeto do papel?</h2>
+                <p>Insira seus dados de contato e anexe as especificações ou o arquivo 3D para receber uma análise técnica detalhada de viabilidade e orçamento estruturado em até 2 horas úteis.</p>
+                <div class="cta-features">
+                    <div class="cta-feature-item"><i class="fas fa-user-shield"></i> Seus arquivos protegidos por termo de confidencialidade (NDA).</div>
+                    <div class="cta-feature-item"><i class="fas fa-tools"></i> Consultoria gratuita sobre o melhor material para a sua aplicação.</div>
+                </div>
+            </div>
+            <div class="cta-form-container">
+                <form class="lead-form" id="form-orcamento" onsubmit="event.preventDefault(); alert('Solicitação enviada com sucesso! Nossa equipe técnica entrará em contato em até 2 horas.');">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo *</label>
+                        <input type="text" id="nome" required placeholder="Ex: João Silva">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail Corporativo / Pessoal *</label>
+                        <input type="email" id="email" required placeholder="Ex: joao@empresa.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="whatsapp">WhatsApp / Telefone *</label>
+                        <input type="tel" id="whatsapp" required placeholder="(11) 99999-9999">
+                    </div>
+                    <div class="form-group">
+                        <label for="material">Material Preferencial</label>
+                        <select id="material">
+                            <option value="nao-sei">Não tenho certeza (Quero ajuda técnica)</option>
+                            <option value="abs">ABS (Resistência térmica e mecânica)</option>
+                            <option value="petg">PETG (Resistência química e durabilidade)</option>
+                            <option value="nylon">Nylon / Fibra de Carbono (Alta performance)</option>
+                            <option value="resina">Resina de Alta Resolução (Detalhes estéticos)</option>
+                            <option value="tpu">TPU (Flexível / Emborrachado)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Detalhes do Projeto / Quantidade</label>
+                        <textarea id="mensagem" rows="3" placeholder="Descreva a aplicação da peça, dimensões estimadas ou requisitos de esforço mecânico..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Solicitar Orçamento Gratuito</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq-section">
+        <div class="container container-narrow">
+            <div class="section-header">
+                <h2>Perguntas Frequentes sobre Impressão 3D</h2>
+                <p>Esclareça suas principais dúvidas técnicas e comerciais sobre o fornecimento de peças.</p>
+            </div>
+            <div class="accordion" id="faq-accordion">
+                </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="fas fa-cube icon"></i> <span>3D<span class="text-gradient">Forge Pro</span></span>
+                </div>
+                <p>Manufatura aditiva profissional, engenharia reversa e soluções industriais sob demanda com máxima tecnologia.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <a href="#beneficios">Benefícios</a>
+                <a href="#produtos">Aplicações</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contato Técnico</h4>
+                <p><i class="fas fa-envelope"></i> engenharia@3dforgepro.com.br</p>
+                <p><i class="fas fa-phone-alt"></i> 0800 3D PIECES (743237)</p>
+                <p><i class="fas fa-map-marker-alt"></i> Polo Tecnológico Industrial - São Paulo/SP</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 3DForge Pro. Todos os direitos reservados. CNPJ: 00.000.000/0001-00</p>
+                <p>Desenvolvido com Engenharia de Conversão Dedicada.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
